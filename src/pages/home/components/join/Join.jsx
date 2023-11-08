@@ -16,7 +16,7 @@ import { motion } from 'framer-motion';
 
 const Join = () => {
   return (
-    <section className='bg-violet join px-4 md:px-0 pt-24 lg:pt-0'>
+    <section className='bg-violet join px-4 md:px-0 pt-24 lg:pt-0 overflow-hidden md:overflow-visible'>
       <div className='container max-w-[95%] md:max-w-[85%] mx-auto'>
         <div className='grid md:grid-cols-12 gap-20'>
           <div className='md:col-span-6 flex flex-col items-start justify-center'>
@@ -136,7 +136,7 @@ const Join = () => {
             <div className='rocket-container md:absolute w-full md:w-[41%] scale-125 md:scale-100'>
               <motion.img src={rocket} alt="rocket" initial={{ translateY: '10%', translateX: '-10%' }}
                 whileInView={{ translateY: '-10%', translateX: '30%' }}
-                transition={{ duration: 1, ease: 'easeInOut' }} className='w-[42%] min-w-[250px] block md:hidden' />
+                transition={{ duration: 1, ease: 'easeInOut' }} className='w-[65%] md:hidden' />
 
               <motion.img src={rocket} alt="rocket" initial={{ translateY: '60%', translateX: '-10%' }}
                 whileInView={{ translateY: '30%', translateX: '30%' }}
