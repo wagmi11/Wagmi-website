@@ -1,0 +1,29 @@
+.app-download {
+  .download-row {
+    @apply min-h-[450px];
+    opacity: 1;
+  }
+
+  .content {
+    @apply max-w-[500px] pt-12;
+    opacity: 1;
+
+    h3 {
+      @apply text-3xl mb-4;
+    }
+
+    p {
+      @apply text-gray;
+    }
+  }
+
+  .app-download-card {
+    @apply relative flex justify-center items-end rounded-3xl overflow-visible min-h-[350px];
+    opacity: 1;
+
+    .app-item {
+      @apply z-10;
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,122 @@
+.hero {
+  height: 100vh;
+  background-color: #58A0F4;
+
+  .circle,
+  .phone,
+  .stage,
+  .stars,
+  .balls,
+  .token,
+  .cursor,
+  .phone-logo {
+    position: absolute;
+  }
+
+  .outer-circle {
+    width: 98%;
+  }
+  .middle-circle {
+    width: 78%;
+  }
+  .inner-circle {
+    width: 58%;
+  }
+
+  .phone-logo {
+    z-index: 9;
+  }
+
+  .balls {
+    bottom: 130px;
+    left: 52%;
+    transform: translate(-50%);
+  }
+
+  .stars {
+    bottom: 80px;
+    left: 51%;
+    transform: translate(-50%);
+  }
+
+  .stage {
+    bottom: 0;
+    z-index: 2;
+  }
+
+  .token {
+    z-index: 2;
+
+    &.leftBlueToken {
+      // left: 15%;
+      bottom: 180px;
+    }
+
+    &.bitcoin {
+      // left: 85%;
+      bottom: 300px;
+    }
+
+    &.eth {
+      // left: 55%;
+      bottom: 85%;
+    }
+
+    &.boxing {
+      // left: 38%;
+      bottom: 60%;
+    }
+
+    &.basketBall {
+      // left: 35%;
+      bottom: 13%;
+    }
+
+    &.football {
+      z-index: 3;
+      // left: 67%;
+      bottom: 40%;
+    }
+  }
+
+  .cursor {
+    z-index: 3;
+
+    &.leftCursor {
+      left: 32%;
+      bottom: 45%;
+    }
+
+    &.rightCursor {
+      left: 73%;
+      bottom: 32%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    .circle{
+      width: auto;
+      overflow: hidden;
+      object-fit: cover;
+    }
+    .outer-circle {
+      height: 100vh;
+  
+    }
+    .middle-circle {
+      height: 80vh;
+    }
+    .inner-circle {
+      height: 60vh;
+    }
+    .stage {
+      bottom: 50px !important;
+      transform: translateX(-50%) scale(1.5) !important;
+    }
+    .stars{
+      bottom: 30%;
+    }
+  }
+}

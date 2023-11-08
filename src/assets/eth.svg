@@ -1,0 +1,50 @@
+<svg width="139" height="143" viewBox="0 0 139 143" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M64.56 138.174C100.461 140.956 131.796 115.442 134.459 81.0839C137.122 46.7253 110.091 16.6888 74.1902 13.9066C38.2897 11.1245 6.95405 36.6379 4.2914 70.9965C1.62876 105.355 28.6595 135.392 64.56 138.174Z" fill="#5973FE" stroke="black" stroke-width="1.97373"/>
+<mask id="mask0_146_482" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="5" y="14" width="129" height="124">
+<ellipse cx="69.3756" cy="76.0395" rx="64.292" ry="61.333" transform="rotate(4.43133 69.3756 76.0395)" fill="#CDFF49"/>
+</mask>
+<g mask="url(#mask0_146_482)">
+<rect x="5.27002" y="71.1465" width="12.9122" height="74.5813" transform="rotate(-15.3898 5.27002 71.1465)" fill="white"/>
+<rect x="64.2739" y="75.7188" width="44.1306" height="74.5813" transform="rotate(-15.3898 64.2739 75.7188)" fill="white"/>
+<rect x="56.7068" y="106.235" width="29.6698" height="34.5992" transform="rotate(5.22789 56.7068 106.235)" fill="black"/>
+<rect x="76.8713" y="108.08" width="6.15176" height="34.5992" transform="rotate(5.22789 76.8713 108.08)" fill="#5973FE"/>
+</g>
+<g filter="url(#filter0_i_146_482)">
+<ellipse cx="70.1237" cy="66.3847" rx="64.292" ry="61.333" transform="rotate(4.43133 70.1237 66.3847)" fill="#5973FE"/>
+</g>
+<path d="M133.255 71.2771C130.682 104.472 100.37 129.271 65.4599 126.566C30.55 123.86 4.42006 94.6868 6.9925 61.4923C9.56494 28.2977 39.8775 3.49832 74.7874 6.20369C109.697 8.90906 135.827 38.0825 133.255 71.2771Z" stroke="black" stroke-width="1.9431"/>
+<mask id="mask1_146_482" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="10" y="9" width="120" height="114">
+<ellipse cx="70.1236" cy="66.3851" rx="59.4499" ry="56.4909" transform="rotate(4.43133 70.1236 66.3851)" fill="#CDFF49"/>
+</mask>
+<g mask="url(#mask1_146_482)">
+<rect x="84.3096" y="-34.5039" width="42.8503" height="186.689" transform="rotate(14.7744 84.3096 -34.5039)" fill="white"/>
+<rect x="124.56" y="-23.8887" width="4.93167" height="186.689" transform="rotate(14.7744 124.56 -23.8887)" fill="black"/>
+<rect x="74.0957" y="0.981201" width="1.56389" height="128.348" transform="rotate(14.7744 74.0957 0.981201)" fill="black"/>
+<rect x="43.8132" y="2.68555" width="7.46308" height="109.6" transform="rotate(14.7744 43.8132 2.68555)" fill="black"/>
+</g>
+<g clip-path="url(#clip0_146_482)">
+<path d="M70.6194 20.21L70.0203 22.0974L68.8595 77.2014L69.4069 77.7709L95.3035 63.1903L70.6194 20.21Z" fill="black"/>
+<path d="M68.8058 76.6639L45.0105 61.9138L69.948 22.4413L69.3461 51.0118L68.8058 76.6639Z" fill="white" stroke="black" stroke-width="1.24839"/>
+<path d="M69.3054 82.6141L68.9822 82.9917L68.5687 102.621L68.8644 103.547L95.2175 68.0416L69.3054 82.6141Z" fill="black"/>
+<path d="M46.2051 69.0358L68.6733 82.9563L68.2811 101.575L46.2051 69.0358Z" fill="white" stroke="black" stroke-width="1.24839"/>
+<path d="M70.5736 52.007L93.9528 63.2339L70.0537 76.6899L70.5736 52.007Z" fill="black" stroke="black" stroke-width="1.24839"/>
+<path d="M44.1464 62.1123L69.4067 77.7706L69.9701 51.0247L44.1464 62.1123Z" fill="black"/>
+<path d="M67.9492 51.4512C68.4486 51.4511 86.8831 59.3576 95.4138 63.3109" stroke="white" stroke-width="1.24839" stroke-linecap="round"/>
+<path d="M67.9492 51.4512L69.1976 77.6673" stroke="white" stroke-width="1.24839" stroke-linecap="round"/>
+</g>
+<defs>
+<filter id="filter0_i_146_482" x="5.84595" y="5.03027" width="128.555" height="122.709" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feMorphology radius="4.37197" operator="erode" in="SourceAlpha" result="effect1_innerShadow_146_482"/>
+<feOffset/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_146_482"/>
+</filter>
+<clipPath id="clip0_146_482">
+<rect width="51.1839" height="83.3559" fill="white" transform="translate(45.0408 19.6711) rotate(1.20676)"/>
+</clipPath>
+</defs>
+</svg>

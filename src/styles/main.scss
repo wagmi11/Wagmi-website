@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './reset';
+
+.primary-btn {
+  @apply bg-blue py-3 px-6 rounded-2xl text-white;
+
+  &.dark {
+    @apply bg-dark;
+  }
+
+  &.light {
+    @apply bg-white text-dark;
+  }
+}
+
+body {
+  background-color: #DFF1F9;
+}
+section {
+  @apply relative w-full;
+}
+
+.slick-list {
+  overflow: visible !important;
+  -webkit-scrollbar: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.prediction {
+  .grid-col {
+    @apply p-8 rounded-3xl relative w-full;
+    min-height: 230px;
+
+    h3 {
+      @apply text-2xl mb-1 text-white font-medium;
+    }
+
+    p {
+      @apply text-offWhite;
+    }
+  }
+}
+
+.prediction ul {
+  position: relative;
+  z-index: 9;
+  margin-top: 0.7rem;
+  list-style-type: disc;
+  padding-left: 16px;
+  font-weight: 500;
+}
+
+@media(min-width:1600px){
+  .slick-track{
+    margin: 0 !important;
+  }
+}

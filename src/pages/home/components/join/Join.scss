@@ -1,0 +1,75 @@
+.join {
+  @apply min-h-[400px] py-16;
+  position: relative;
+  // .join-illustration {
+  //   @apply relative w-full md:w-[400px] h-[400px];
+  //   opacity: 1;
+
+  //   img {
+  //     @apply absolute;
+  //   }
+
+  //   .logo {
+  //     top: 15%;
+  //     left: 50%;
+  //     transform: translateX(-50%);
+  //   }
+
+  //   .left-first {
+  //     top: 50%;
+  //     left: 10%;
+  //   }
+
+  //   .left-second {
+  //     top: 60%;
+  //     left: 10%;
+  //   }
+
+  //   .left-third {
+  //     top: 70%;
+  //     left: 25%;
+  //   }
+
+  //   .middle {
+  //     top: 80%;
+  //     left: 50%;
+  //     transform: translateX(-50%);
+  //   }
+
+  //   .middle-left {
+  //     top: 70%;
+  //     left: 40%;
+  //     transform: translateX(-50%);
+  //   }
+
+  //   .middle-right {
+  //     top: 70%;
+  //     left: 60%;
+  //     transform: translateX(-50%);
+  //   }
+
+  //   .right-first {
+  //     top: 50%;
+  //     right: 15%;
+  //   }
+
+  //   .right-second {
+  //     top: 60%;
+  //     right: 20%;
+  //   }
+
+  //   .right-third {
+  //     top: 75%;
+  //     right: 25%;
+  //   }
+  // }
+  .rocket-container {
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    background-image: url('../../../../assets/rocket-bg.png');
+    background-size: cover;
+    background-position: bottom;
+    border: none;
+  }
+}

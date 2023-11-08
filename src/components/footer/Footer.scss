@@ -1,0 +1,199 @@
+.footer {
+  position: relative;
+  .top-footer-social {
+    img{
+      transition: all 0.2s ease-in;
+      &:hover{
+        scale: 0.9;
+      }
+    }
+  }
+
+  .circle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .star {
+    position: absolute;
+    transition: all ease;
+
+    &.star-left-1 {
+      bottom: -35%;
+      left: 10%;
+      transform: scale(0.3);
+    }
+
+    &.star-left-2 {
+      bottom: -5%;
+      left: 14%;
+      transform: scale(0.6);
+      animation: starAnimationRight1 40s linear infinite;
+      animation-delay: 7s;
+    }
+
+    &.star-left-3 {
+      bottom: 15%;
+      left: 30%;
+      transform: scale(0.2);
+      animation: starAnimationRight6 10s linear infinite;
+    }
+
+    &.star-left-4 {
+      bottom: 45%;
+      left: 35%;
+      transform: scale(0.3);
+    }
+
+    &.star-left-5 {
+      bottom: 80%;
+      left: 40%;
+      transform: scale(0.4);
+      animation: starAnimationRight4 20s linear infinite;
+      animation-delay: 1s;
+    }
+
+    &.star-right-7 {
+      bottom: 45%;
+      right: 35%;
+      transform: scale(0.3);
+    }
+
+    &.star-right-6 {
+      bottom: 20%;
+      right: 40%;
+      transform: scale(0.2);
+      animation: starAnimationRight6 10s linear infinite;
+      animation-delay: 8s;
+    }
+
+    &.star-right-5 {
+      bottom: -15%;
+      right: 35%;
+      transform: scale(0.2);
+      animation: starAnimationRight6 12s linear infinite;
+    }
+
+    &.star-right-4 {
+      bottom: 5%;
+      right: 20%;
+      transform: scale(0.4);
+      animation: starAnimationRight4 20s linear infinite;
+      animation-delay: 4s;
+    }
+
+    &.star-right-3 {
+      bottom: -35%;
+      right: 27%;
+      transform: scale(0.15);
+      animation: starBlink 10s ease infinite;
+      animation-delay: 3s;
+    }
+
+    &.star-right-2 {
+      bottom: -10%;
+      right: 25%;
+      transform: scale(0.15);
+      animation: starBlink 10s ease infinite;
+    }
+
+    &.star-right-1 {
+      bottom: -45%;
+      right: 20%;
+      transform: scale(0.6);
+      animation: starAnimationRight1 20s linear infinite;
+    }
+  }
+}
+
+.bottom-footer-list {
+  li {
+    padding: 0.5rem;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      background-color: #f4f4f4;
+    }
+  }
+}
+
+@keyframes starAnimationRight1 {
+  0% {
+    transform: scale(0.6);
+  }
+
+  40% {
+    transform: scale(0);
+  }
+
+  80% {
+    transform: scale(0.6);
+  }
+
+  100% {
+    transform: scale(0.6);
+  }
+}
+
+@keyframes starAnimationRight4 {
+  0% {
+    transform: scale(0.4);
+  }
+
+  40% {
+    transform: scale(0);
+  }
+
+  80% {
+    transform: scale(0.4);
+  }
+
+  100% {
+    transform: scale(0.4);
+  }
+}
+
+@keyframes starAnimationRight6 {
+  0% {
+    opacity: 1;
+  }
+
+  40% {
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes starBlink {
+  0% {
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@media(max-width: 576px) {
+  .footer {
+
+    .circle {
+      transform: translateX(-50%) scale(4) !important;
+    }
+  }
+}

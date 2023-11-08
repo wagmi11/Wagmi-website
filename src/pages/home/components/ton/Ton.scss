@@ -1,0 +1,106 @@
+.ton {
+  overflow: hidden;
+  transition: all 0.2s ease;
+
+  .ton-card {
+    @apply bg-[#303030] rounded-t-3xl w-full lg:max-w-[400px] z-10 md:min-h-[550px];
+    opacity: 1;
+    transition: background 300ms ease-in-out;
+
+    .card-banner {
+      height: 330px;
+      @apply relative flex justify-end items-center flex-col overflow-hidden;
+
+      img {
+        @apply relative z-10 max-w-[90%] md:max-w-[80%];
+        opacity: 1;
+      }
+
+      // img.bg-pattern {
+      //   @apply absolute top-0 left-0 w-full h-full object-cover max-w-none;
+      //   transition: all 0.3s ease;
+      // }
+    }
+
+    // &:hover {
+    //   .card-banner {
+    //     img.bg-pattern {
+    //       scale: 1.5;
+    //     }
+    //   }
+    // }
+
+    &.topup {
+      .card-banner {
+        @apply justify-center;
+      }
+    }
+
+    .card-content {
+      @apply p-8 text-center;
+
+      h4 {
+        @apply text-xl mb-4 text-white;
+      }
+
+      p {
+        @apply text-gray;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .ton {
+    .ton-card-wrapper {
+      background: rgb(128 128 128 / 0.2);
+      padding: 3px;
+      border-radius: 24px;
+      position: relative;
+      z-index: 10;
+      overflow: hidden;
+
+      .blob {
+        filter: blur(40px);
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        background: rgb(255, 255, 255, 0.5);
+        transform: translate(var(--circle-x, 0), var(--circle-y, 0));
+        transition: transform 0.1s;
+        /* Optional: Add a smooth transition */
+        pointer-events: none;
+        /* To allow mouse events to pass through the circle */
+        opacity: 0;
+      }
+
+      .fakeblob {
+        display: hidden;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+      }
+
+      &:hover {
+        transform: translateY(40px);
+
+        .blob {
+          opacity: 1;
+        }
+
+        .ton-card {
+          background: rgb(26, 26, 26, 0.8);
+          backdrop-filter: blur(80px);
+        }
+      }
+    }
+  }
+}
