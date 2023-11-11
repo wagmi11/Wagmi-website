@@ -26,8 +26,8 @@ const AppDownloadSection = () => {
                 the future of prediction platforms!
               </p>
               <div className='flex gap-2'>
-                <button className='primary-btn mt-6'>Launch</button>
-                <button className='primary-btn light mt-6 border-2 border-[#00000066]'>
+                <button className='primary-btn mt-6'>Coming Soon</button>
+                <button className='primary-btn light mt-6 border-2 border-[#00000066] opacity-50'>
                   How to Play?
                 </button>
               </div>
@@ -118,8 +118,8 @@ const AppDownloadSection = () => {
                 and top-notch security.
               </p>
               <div className='flex gap-2'>
-                <button className='primary-btn mt-6'>Launch</button>
-                <button className='primary-btn light mt-6 border-2 border-[#00000066]'>
+                <button className='primary-btn mt-6'>Coming Soon</button>
+                <button className='primary-btn light mt-6 border-2 border-[#00000066] opacity-50'>
                   How to Play?
                 </button>
               </div>

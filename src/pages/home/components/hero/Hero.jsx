@@ -24,18 +24,6 @@ const Hero = () => {
   const [showLoader, setShowLoader] = useState(true);
   const [imagesLoaded, setImagesLoaded] = useState(false);
 
-  // Simulate a 3-second delay before showing the hero section
-  useEffect(() => {
-    const delayTimer = setTimeout(() => {
-      setShowLoader(false);
-    }, 3000);
-
-    return () => {
-      // Clear the timeout when the component unmounts to prevent memory leaks
-      clearTimeout(delayTimer);
-    };
-  }, []); // The empty dependency array ensures this effect runs only once on component mount.
-
   useEffect(() => {
     const imageUrls = [
       innerCircle,
@@ -67,6 +55,7 @@ const Hero = () => {
     Promise.all(imagePromises)
       .then(() => {
         setImagesLoaded(true);
+        setShowLoader(false);
       })
       .catch(error => {
         console.error('Image preload error:', error);
@@ -74,7 +63,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div>
+    <div id='top'>
       {showLoader ? (
         <div className='fixed h-screen w-screen bg-white flex justify-center items-center z-50'>
           <motion.img
@@ -113,7 +102,7 @@ const Hero = () => {
               alt='outer-circle'
               className='circle outer-circle'
               initial={{
-                scale: 10,
+                scale: 0,
                 left: '50%',
                 bottom: '1px',
                 translateX: '-50%',
@@ -124,7 +113,7 @@ const Hero = () => {
                 bottom: '1px',
                 translateX: '-50%',
               }}
-              transition={{ duration: 2 }}
+              transition={{ duration: 1 }}
             />
             <motion.img
               src={middleCircle}
@@ -142,7 +131,7 @@ const Hero = () => {
                 bottom: '1px',
                 translateX: '-50%',
               }}
-              transition={{ duration: 2 }}
+              transition={{ duration: 1.5 }}
             />
             <motion.img
               src={innerCircle}
@@ -162,11 +151,6 @@ const Hero = () => {
               }}
               transition={{ duration: 2 }}
             />
-            {/* <MouseParallax
-              isAbsolutelyPositioned
-              strength={0.14}
-              lerpEase={0.01}
-            > */}
             <motion.img
               src={phone}
               alt='phone'
@@ -185,7 +169,6 @@ const Hero = () => {
               }}
               transition={{ duration: 2 }}
             />
-            {/* </MouseParallax> */}
             <ScrollParallax
               isAbsolutelyPositioned
               strength={0.14}
@@ -344,9 +327,6 @@ const Hero = () => {
               />
             </MouseParallax>
           </section>
-          {/* <section className='md:hidden h-96 flex items-end justify-center'>
-            <img src={heroMobile} alt='hero' className='w-full' />
-          </section> */}
         </div>
       ) : (
         <div className='error-message'>

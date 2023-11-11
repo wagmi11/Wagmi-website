@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Hero from './components/hero/Hero';
 import Prediction from './components/prediction/Prediction';
 import Ton from './components/ton/Ton';
 import AppDownloadSection from './components/app-download/AppDownloadSection';
 import Join from './components/join/Join';
 import Team from './components/team/Team';
+import Footer from '../../components/footer/Footer';
 import Articles from './components/articles/Articles';
 
 const Home = () => {
@@ -16,7 +17,8 @@ const Home = () => {
       <AppDownloadSection />
       <Join />
       <Team />
-      {/* <Articles /> */}
+      <Articles />
+      <Footer />
     </>
   );
 };

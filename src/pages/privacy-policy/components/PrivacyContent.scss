@@ -1,0 +1,25 @@
+.privacy-content {
+  h4{
+    @apply text-3xl font-header font-bold mb-6;
+    opacity: 1;
+  }
+
+  p, ul {
+    @apply text-[#8F8F8F];
+    opacity: 1;
+  }
+
+  p{
+    @apply mb-4;
+  }
+
+  ul {
+    list-style: disc;
+    padding-left: 16px;
+  }
+
+  article {
+    @apply mb-12;
+    opacity: 1;
+  }
+}

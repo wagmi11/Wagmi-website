@@ -2,14 +2,7 @@ import React, { useState } from 'react';
 import LogoImage from '../assets/logo.svg';
 import './NaivgationBar.scss';
 import { motion } from 'framer-motion';
-import {
-  Link,
-  Button,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-} from 'react-scroll';
+import { HashLink } from 'react-router-hash-link';
 
 const navLinks = [
   {
@@ -24,22 +17,20 @@ const navLinks = [
     name: 'Meet the team',
     targetSection: 'team',
   },
+  {
+    name: 'Blogs',
+    targetSection: 'blogs',
+  },
 ];
 
 const navList = (
   <ul className='flex flex-col lg:flex-row justify-start lg:justify-between items-start lg:items-center gap-8'>
     {navLinks.map((item, index) => (
-      <Link
-        to={item.targetSection}
-        spy={true}
-        smooth={true}
-        offset={-50}
-        duration={1000}
-      >
+      <HashLink to={`/#${item.targetSection}`} smooth>
         <li key={index} className='text-white cursor-pointer'>
           {item.name}
         </li>
-      </Link>
+      </HashLink>
     ))}
   </ul>
 );
@@ -55,9 +46,11 @@ const NavigationBar = () => {
       transition={{ duration: 1, delay: 3.2 }}
     >
       <div className='bg-dark border-2 border-darkBorder container w-full max-w-4xl mx-auto px-6 py-4 flex justify-between items-center rounded-2xl'>
-        <img src={LogoImage} alt='wagmi 11 logo' />
+        <HashLink to='/#top'>
+          <img src={LogoImage} alt='wagmi 11 logo' />
+        </HashLink>
         <div className='hidden lg:block'>{navList}</div>
-        <button className='primary-btn hidden lg:block'>Launch App</button>
+        <button className='primary-btn hidden lg:block'>Coming Soon</button>
         <button
           className={`lg:hidden nav-button menu ${
             isOpen ? 'opened' : ''
@@ -86,7 +79,7 @@ const NavigationBar = () => {
           className={`rounded-2xl px-6 border-4 border-darkBorder py-6 bg-dark`}
         >
           <div className='lg:hidden'>{navList}</div>
-          <button className='primary-btn mt-6'>Launch App</button>
+          <button className='primary-btn mt-6'>Coming Soon</button>
         </div>
       </motion.div>
     </motion.div>

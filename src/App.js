@@ -1,26 +1,22 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './styles/main.scss';
-import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import Home from './pages/home/Home';
 import { ReactLenis } from '@studio-freight/react-lenis';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import Footer from './components/footer/Footer';
+import PrivacyPolicy from './pages/privacy-policy/PrivacyPolicy';
+import FooterJoin from './components/footer-join/FooterJoin';
 
 const App = () => {
-  useEffect(() => {
-    setTimeout(() => {
-      window.scrollTo(0, 0);
-    }, 2000);
-  }, []);
-
   return (
     <ReactLenis root options={{ duration: 3 }}>
       <Router>
-        <Routes>
-          <Route exact path='/' element={<Home />} />
-        </Routes>
-        <Footer />
+        <Switch>
+          <Route exact path='/' component={Home} />
+          <Route exact path='/privacy-policy' component={PrivacyPolicy} />
+        </Switch>
+        <FooterJoin/>
       </Router>
     </ReactLenis>
   );

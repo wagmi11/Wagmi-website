@@ -1,0 +1,46 @@
+.privacy-hero {
+  height: 100vh;
+  background-color: #58A0F4;
+
+  .circle, .stars {
+    position: absolute;
+  }
+
+  .outer-circle {
+    width: 98%;
+  }
+  .middle-circle {
+    width: 78%;
+  }
+  .inner-circle {
+    width: 58%;
+  }
+  .stars {
+    bottom: 80px;
+    left: 51%;
+    transform: translate(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .privacy-hero {
+    .circle{
+      width: auto;
+      overflow: hidden;
+      object-fit: cover;
+    }
+    .outer-circle {
+      height: 100vh;
+  
+    }
+    .middle-circle {
+      height: 80vh;
+    }
+    .inner-circle {
+      height: 60vh;
+    }
+    .stars{
+      bottom: 30%;
+    }
+  }
+}

@@ -15,7 +15,7 @@ module.exports = {
       offWhite: '#FFFEFE',
       tonBg: '#242424',
       gray: '#aeaeae',
-      sectionBg: "#E6E6FA"
+      sectionBg: "#F2F3F4"
     },
     fontFamily: {
       'sans': ['Inter'],

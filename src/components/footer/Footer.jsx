@@ -7,16 +7,11 @@ import star from '../../assets/footer-star.svg';
 import telegram from '../../assets/telegram.svg';
 import discord from '../../assets/discord.svg';
 import twitter from '../../assets/twitter-logo.svg';
-import social from '../../assets/social.svg';
-import logo from '../../assets/logo-white.svg';
 import leftCursor from '../../assets/left-cursor.svg';
 import rightCursor from '../../assets/right-cursor.svg';
-import footerInstagram from '../../assets/footer-instagram.png';
-import footerTwitter from '../../assets/footer-x.png';
-import footerLinkedin from '../../assets/footer-linkedin.png';
-import footerYoutube from '../../assets/footer-youtube.png';
 import { motion } from 'framer-motion';
 import { MouseParallax } from 'react-just-parallax';
+
 
 const Footer = () => {
   return (
@@ -124,62 +119,6 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-      <div className='text-center py-12'>
-        <img src={logo} alt='wagmi 11' className='mx-auto mb-8' />
-        <ul className='flex flex-wrap justify-center items-center gap-8 text-[#fff]'>
-          <li>Features</li>
-          <li>Product</li>
-          <li>Meet the Team</li>
-          <li>Blog</li>
-          <li>Careers</li>
-          <li>Help</li>
-          <li>Privacy</li>
-        </ul>
-      </div>
-      <div
-        className='flex flex-col md:flex-row gap-6 justify-between items-center py-8 pb-12 container max-w-[95%] md:max-w-[85%] mx-auto'
-        style={{ borderTop: '1px solid #E4E7EC' }}
-      >
-        <ul className='flex items-center gap-1 bottom-footer-list'>
-          <li>
-            <a
-              href='https://instagram.com/wagmi11'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              <img src={footerInstagram} alt='instagram' width={18} />
-            </a>
-          </li>
-          <li>
-            <a
-              href='https://x.com/wagmi_11'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              <img src={footerTwitter} alt='twitter' width={18} />
-            </a>
-          </li>
-          <li>
-            <a
-              href='https://linkedin.com/company/wagmi11/'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              <img src={footerLinkedin} alt='linkedin' width={18} />
-            </a>
-          </li>
-          <li>
-            <a
-              href='https://www.youtube.com/@wagmi11'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              <img src={footerYoutube} alt='youtube' width={18} />
-            </a>
-          </li>
-        </ul>
-        <p className='text-[#fff]'>© 2023 Wagmi 11. All Rights Reserved</p>
-      </div>
     </div>
   );
 };

@@ -83,7 +83,7 @@ const Team = () => {
     },
   ];
   return (
-    <div className='bg-sectionBg' id='team'>
+    <div className='bg-sectionBg' id='section-team'>
       <section className='py-24 team px-4 md:px-0 overflow-hidden'>
         <div>
           <div className='container max-w-[95%] md:max-w-[85%] mx-auto'>
