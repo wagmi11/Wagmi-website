@@ -2,7 +2,6 @@ import React, { useRef } from 'react';
 import './Ton.scss';
 import { motion } from 'framer-motion';
 import topUp from '../../../../assets/topup.png';
-import topUpPattern from '../../../../assets/ton-topup-pattern.svg';
 
 const CardThree = () => {
   const cardRef = useRef(null);

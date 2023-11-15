@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import member1 from '../../../../assets/member-1.png';
 import member2 from '../../../../assets/member-2.png';
-import member3 from '../../../../assets/member-3.png';
+import member3 from '../../../../assets/member-3.jpg';
 import member4 from '../../../../assets/member-4.png';
 import rightArrow from '../../../../assets/arrow-right.svg';
 import leftArrow from '../../../../assets/arrow-left.svg';
@@ -83,7 +83,7 @@ const Team = () => {
     },
   ];
   return (
-    <div className='bg-sectionBg' id='section-team'>
+    <div className='bg-sectionBg' id='team'>
       <section className='py-24 team px-4 md:px-0 overflow-hidden'>
         <div>
           <div className='container max-w-[95%] md:max-w-[85%] mx-auto'>

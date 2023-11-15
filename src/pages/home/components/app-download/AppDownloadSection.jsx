@@ -26,10 +26,14 @@ const AppDownloadSection = () => {
                 the future of prediction platforms!
               </p>
               <div className='flex gap-2'>
-                <button className='primary-btn mt-6'>Coming Soon</button>
-                <button className='primary-btn light mt-6 border-2 border-[#00000066] opacity-50'>
-                  How to Play?
-                </button>
+                <a href="https://t.me/wagmi11" target="_blank" rel="noopener noreferrer">
+                  <button className='primary-btn mt-6'>Launch</button>
+                </a>
+                <a href="https://wagmi11.notion.site/How-to-Play-Wagmi11-bb7288f884214da4b3ad92835e7796a1?pvs=4" target="_blank" rel="noopener noreferrer">
+                  <button className='primary-btn light mt-6 border-2 border-[#00000066]'>
+                    How to Play?
+                  </button>
+                </a>
               </div>
             </div>
           </div>

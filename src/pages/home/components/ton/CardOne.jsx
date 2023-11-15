@@ -2,8 +2,8 @@ import React, { useRef } from 'react';
 import './Ton.scss'
 import { motion } from 'framer-motion';
 import firstNotification from '../../../../assets/notification-1.svg';
-import secondNotification from '../../../../assets/notification-2.svg';
-import notificationPattern from '../../../../assets/ton-notification-pattern.svg';
+import notification from '../../../../assets/notification.png';
+// import notificationPattern from '../../../../assets/ton-notification-pattern.svg';
 
 const CardOne = () => {
   const cardRef = useRef(null);
@@ -36,19 +36,11 @@ const CardOne = () => {
             transition={{ duration: 1 }}
           /> */}
           <motion.img
-            src={firstNotification}
+            src={notification}
             alt='notification'
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
-          />
-          <motion.img
-            src={secondNotification}
-            alt='notification'
-            className='mb-8'
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 1 }}
           />
         </div>
         <div className='card-content'>

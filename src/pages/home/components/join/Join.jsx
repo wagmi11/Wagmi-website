@@ -32,8 +32,10 @@ const Join = () => {
               future.
             </p>
             <div className='flex gap-4 mt-6'>
-              <button className='primary-btn dark'>Invest</button>
-              <button className='primary-btn light'>Litepaper</button>
+            <a href="https://airtable.com/appwA2iT5p19G03FM/shrrlJAwFVR8ZwpZO" target="_blank" rel="noopener noreferrer">
+              <button className='primary-btn light'>Invest Now</button>
+            </a>
+              <button className='primary-btn transparent opacity-50'>Litepaper</button>
             </div>
           </div>
           <div className='lg:col-span-6 flex justify-center items-center'>

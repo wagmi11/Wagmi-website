@@ -24,20 +24,20 @@
 
 @media (max-width: 768px) {
   .privacy-hero {
+    height: 60vh;
     .circle{
       width: auto;
       overflow: hidden;
       object-fit: cover;
     }
     .outer-circle {
-      height: 100vh;
-  
+      height: 60vh;
     }
     .middle-circle {
-      height: 80vh;
+      height: 40vh;
     }
     .inner-circle {
-      height: 60vh;
+      height: 20vh;
     }
     .stars{
       bottom: 30%;

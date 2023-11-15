@@ -14,10 +14,15 @@
   &.light {
     @apply bg-white text-dark;
   }
+
+  &.transparent {
+    background: transparent;
+    @apply border;
+  }
 }
 
 body {
-  background-color: #DFF1F9;
+  background-color: #F2F3F4;
 }
 section {
   @apply relative w-full;
