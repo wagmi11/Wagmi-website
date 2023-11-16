@@ -1,7 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import articleCover1 from '../../../../assets/article-cover-1.svg';
 import articleCover2 from '../../../../assets/article-cover-2.png';
-import articleCover3 from '../../../../assets/article-cover-3.svg';
 import rightArrow from '../../../../assets/arrow-right.svg';
 import leftArrow from '../../../../assets/arrow-left.svg';
 import redirect from '../../../../assets/redirect.svg';

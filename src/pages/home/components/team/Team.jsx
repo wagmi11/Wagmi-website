@@ -123,7 +123,7 @@ const Team = () => {
                     <motion.img
                       src={image}
                       alt={name}
-                      className='img-fluid w-full'
+                      className='img-fluid w-full rounded-[24px]'
                       initial={{ opacity: 0 }}
                       whileInView={{ opacity: 1 }}
                       transition={{ duration: 1 }}

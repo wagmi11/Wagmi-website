@@ -21,12 +21,13 @@ const Ton = () => {
       <section className='bg-tonBg pt-12 ton px-4 px-md-0' id='features'>
         <div className='container max-w-[95%] md:max-w-[85%] mx-auto'>
           <h2 className='text-white text-2xl mb-6 font-header font-medium'>
-            Powered by TON,
+            Fueled by TON,
             <br />
-            Super app for new web
+            Revolutionary web mastery in one app.
           </h2>
           <p className='text-gray mb-16'>
-            Unleash the Potential of the Web with TON-Powered <br /> Super App
+            Ignite the Boundless Power of the Internet with TON-Infused
+            <br /> Sensational Super App
           </p>
           <div className='flex justify-between items-center gap-6 flex-col lg:flex-row'>
             <CardOne />
