@@ -50,7 +50,7 @@ const NavigationBar = () => {
           <img src={LogoImage} alt='wagmi 11 logo' />
         </HashLink>
         <div className='hidden lg:block'>{navList}</div>
-        <a href="https://t.me/wagmi11" target="_blank" rel="noopener noreferrer">
+        <a href="https://t.me/wagmi11TestnetPredictBot" target="_blank" rel="noopener noreferrer">
           <button className='primary-btn hidden lg:block'>Launch App</button>
         </a>
         <button
@@ -81,7 +81,7 @@ const NavigationBar = () => {
           className={`rounded-2xl px-6 border-4 border-darkBorder py-6 bg-dark`}
         >
           <div className='lg:hidden'>{navList}</div>
-          <a href="https://t.me/wagmi11" target="_blank" rel="noopener noreferrer">
+          <a href="https://t.me/wagmi11TestnetPredictBot" target="_blank" rel="noopener noreferrer">
             <button className='primary-btn mt-6'>Launch App</button>
           </a>
         </div>
