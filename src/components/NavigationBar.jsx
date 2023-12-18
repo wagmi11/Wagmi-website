@@ -40,7 +40,7 @@ const NavigationBar = () => {
 
   return (
     <motion.div
-      className='fixed top-4 left-0 py-4 w-full max-w-full px-4 px-md-0 z-50 navigation-bar'
+      className='fixed top-8 md:top-20 left-0 py-4 w-full max-w-full px-4 px-md-0 z-50 navigation-bar'
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1, delay: 3.2 }}

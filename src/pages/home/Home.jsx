@@ -7,10 +7,12 @@ import Join from './components/join/Join';
 import Team from './components/team/Team';
 import Footer from '../../components/footer/Footer';
 import Articles from './components/articles/Articles';
+import NotificationBanner from '../../components/notification-banner/NotificationBanner';
 
 const Home = () => {
   return (
     <>
+      <NotificationBanner/>
       <Hero />
       <Prediction />
       <Ton />
