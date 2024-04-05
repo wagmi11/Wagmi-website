@@ -69,7 +69,7 @@ const Team = () => {
     {
       name: 'Tuminzee',
       image: member2,
-      role: 'Lead Developer',
+      role: 'CTO',
       twitterHandle: 'https://twitter.com/tuminzee',
       linkedinHandle: 'https://www.linkedin.com/in/tumin-sheth/',
     },

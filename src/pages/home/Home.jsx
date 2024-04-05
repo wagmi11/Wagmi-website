@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Hero from './components/hero/Hero';
 import Prediction from './components/prediction/Prediction';
 import Ton from './components/ton/Ton';

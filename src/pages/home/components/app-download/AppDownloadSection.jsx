@@ -26,7 +26,7 @@ const AppDownloadSection = () => {
                 the future of prediction platforms!
               </p>
               <div className='flex gap-2'>
-                <a href="https://t.me/wagmi11TestnetPredictBot" target="_blank" rel="noopener noreferrer">
+                <a href="https://t.me/wagmi11PredictBot" target="_blank" rel="noopener noreferrer">
                   <button className='primary-btn mt-6'>Launch</button>
                 </a>
                 <a href="https://wagmi11.notion.site/How-to-Play-Wagmi11-bb7288f884214da4b3ad92835e7796a1?pvs=4" target="_blank" rel="noopener noreferrer">
