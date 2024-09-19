@@ -18,19 +18,35 @@ const navLinks = [
     targetSection: 'team',
   },
   {
-    name: 'Blogs',
-    targetSection: 'blogs',
+    name: 'Ambassadors',
+    targetSection: '', // This will be used to render the external link
+    externalLink: 'https://fwxyuew0r3x.typeform.com/to/xow0rSkx', // Add a property for the external link
   },
 ];
 
 const navList = (
   <ul className='flex flex-col lg:flex-row justify-start lg:justify-between items-start lg:items-center gap-8'>
     {navLinks.map((item, index) => (
-      <HashLink to={`/#${item.targetSection}`} smooth>
-        <li key={index} className='text-white cursor-pointer'>
-          {item.name}
-        </li>
-      </HashLink>
+      item.externalLink ? (
+        // Render an <a> tag for external links
+        <a 
+          href={item.externalLink} 
+          target='_blank' 
+          rel='noopener noreferrer' 
+          key={index}
+        >
+          <li className='text-white cursor-pointer'>
+            {item.name}
+          </li>
+        </a>
+      ) : (
+        // Render a HashLink for internal navigation
+        <HashLink to={`/#${item.targetSection}`} smooth key={index}>
+          <li className='text-white cursor-pointer'>
+            {item.name}
+          </li>
+        </HashLink>
+      )
     ))}
   </ul>
 );
