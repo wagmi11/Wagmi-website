@@ -16,7 +16,7 @@ const FooterJoin = () => {
           <HashLink smooth to='/#features'><li>Features</li></HashLink>
           <HashLink smooth to='/#products'><li>Products</li></HashLink>
           <HashLink smooth to='/#team'><li>Meet the Team</li></HashLink>
-          <HashLink smooth to='/#blogs'><li>Blog</li></HashLink>
+          <HashLink smooth to='https://fwxyuew0r3x.typeform.com/to/xow0rSkx'><li>Ambassadors</li></HashLink>
           <li>Careers</li>
           <li>Help</li>
           <HashLink to='/privacy-policy#section-top'>
@@ -66,7 +66,7 @@ const FooterJoin = () => {
             </a>
           </li>
         </ul>
-        <p className='text-[#fff]'>© 2023 Wagmi 11. All Rights Reserved</p>
+        <p className='text-[#fff]'>© 2024 Wagmi 11. All Rights Reserved</p>
       </div>
     </footer>
   );
