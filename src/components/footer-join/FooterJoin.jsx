@@ -66,7 +66,7 @@ const FooterJoin = () => {
             </a>
           </li>
         </ul>
-        <p className='text-[#fff]'>© 2023 Wagmi 11. All Rights Reserved</p>
+        <p className='text-[#fff]'>© 2024 Wagmi 11. All Rights Reserved</p>
       </div>
     </footer>
   );
