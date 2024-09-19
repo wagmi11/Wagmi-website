@@ -16,7 +16,7 @@ const FooterJoin = () => {
           <HashLink smooth to='/#features'><li>Features</li></HashLink>
           <HashLink smooth to='/#products'><li>Products</li></HashLink>
           <HashLink smooth to='/#team'><li>Meet the Team</li></HashLink>
-          <HashLink smooth to='/#blogs'><li>Blog</li></HashLink>
+          <HashLink smooth to='https://fwxyuew0r3x.typeform.com/to/xow0rSkx'><li>Ambassadors</li></HashLink>
           <li>Careers</li>
           <li>Help</li>
           <HashLink to='/privacy-policy#section-top'>
